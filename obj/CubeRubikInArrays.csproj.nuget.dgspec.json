@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cisco01\\Documents\\dev\\Rubik\\RubikCube\\CubeRubikInArrays.csproj": {}
+    "C:\\Users\\Desarrollo\\Documents\\Dev\\Shino\\C-Sharp\\RubikCube\\CubeRubikInArrays.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cisco01\\Documents\\dev\\Rubik\\RubikCube\\CubeRubikInArrays.csproj": {
+    "C:\\Users\\Desarrollo\\Documents\\Dev\\Shino\\C-Sharp\\RubikCube\\CubeRubikInArrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cisco01\\Documents\\dev\\Rubik\\RubikCube\\CubeRubikInArrays.csproj",
+        "projectUniqueName": "C:\\Users\\Desarrollo\\Documents\\Dev\\Shino\\C-Sharp\\RubikCube\\CubeRubikInArrays.csproj",
         "projectName": "CubeRubikInArrays",
-        "projectPath": "C:\\Users\\cisco01\\Documents\\dev\\Rubik\\RubikCube\\CubeRubikInArrays.csproj",
-        "packagesPath": "C:\\Users\\cisco01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cisco01\\Documents\\dev\\Rubik\\RubikCube\\obj\\",
+        "projectPath": "C:\\Users\\Desarrollo\\Documents\\Dev\\Shino\\C-Sharp\\RubikCube\\CubeRubikInArrays.csproj",
+        "packagesPath": "C:\\Users\\Desarrollo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Desarrollo\\Documents\\Dev\\Shino\\C-Sharp\\RubikCube\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cisco01\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {}
         },
         "frameworks": {
           "net8.0": {
@@ -65,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

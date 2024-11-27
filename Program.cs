@@ -14,6 +14,8 @@ internal class Program
             Console.Write("Tu opción: ");
             string selectMove = Console.ReadLine();
             game.MovesFactory(selectMove);
+            Console.WriteLine("\n");
+            game.GetPlainMatrix();
         }
     }
 

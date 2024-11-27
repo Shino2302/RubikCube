@@ -1,4 +1,6 @@
-﻿namespace CubeRubikInArrays.Cube;
+﻿using System.ComponentModel;
+
+namespace CubeRubikInArrays.Cube;
 
 public class Cube
 {
@@ -15,6 +17,18 @@ public class Cube
             { 'G', 'G', 'G', 'G', 'G', 'G', 'G', 'G', 'G' }, // Cara izquierda (verde)
             { 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B' }  // Cara derecha (azul)
         };
+    }
+
+    public void ListPlainMatrix()
+    {
+        for (int i = 0; i < 6; i++)
+            for(int j = 0; j < 9; j++)
+            {
+                if( j == 0 )
+                    Console.Write("\n");
+                Console.Write($"[{i},{j}]: {faces[i,j]}, ");
+            }
+            Console.WriteLine("\n");
     }
 
     public void Display()

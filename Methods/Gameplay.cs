@@ -12,6 +12,8 @@ public class Gameplay
         _yourCube.Display();
     }
 
+    public void GetPlainMatrix() => _yourCube.ListPlainMatrix();
+
     public void MovesFactory(string moveSelected)
     {
         switch(moveSelected)

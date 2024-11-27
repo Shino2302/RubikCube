@@ -1,0 +1,14 @@
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/bin/Debug/net8.0/CubeRubikInArrays
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/bin/Debug/net8.0/CubeRubikInArrays.deps.json
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/bin/Debug/net8.0/CubeRubikInArrays.runtimeconfig.json
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/bin/Debug/net8.0/CubeRubikInArrays.dll
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/bin/Debug/net8.0/CubeRubikInArrays.pdb
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.AssemblyInfoInputs.cache
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.AssemblyInfo.cs
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.csproj.CoreCompileInputs.cache
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.dll
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/refint/CubeRubikInArrays.dll
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.pdb
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/CubeRubikInArrays.genruntimeconfig.cache
+/run/media/shino/Dev_Files/BackEnd_Projects/CuboRubik/CubeRubikInArrays/obj/Debug/net8.0/ref/CubeRubikInArrays.dll

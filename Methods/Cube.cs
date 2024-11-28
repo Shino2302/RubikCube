@@ -18,7 +18,6 @@ public class Cube
             { 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B' }  // Cara derecha (azul)
         };
     }
-
     public void ListPlainMatrix()
     {
         for (int i = 0; i < 6; i++)
@@ -30,7 +29,6 @@ public class Cube
             }
             Console.WriteLine("\n");
     }
-
     public void Display()
     {
         // Mostrar cara superior
@@ -120,44 +118,86 @@ public class Cube
         else
             Console.WriteLine("Opción irreconosible");
     }
-
     /*D de Down para movimientos de la cara inferior*/
     public void MoveD(char direction)
     {
         if(direction == 'L')
         {
             MoveToLeft(1);
-            char[] temp = new char[3];
-            for (int i = 0; i < 3; i++) 
-                temp[i] = faces[2, 6 + i]; // Frontal inferior
+            char[] temporal = new char[12];
+            /*Tomando cara Frontal 'F'*/
+            temporal[0] = faces[2, 6];
+            temporal[1] = faces[2, 7];
+            temporal[2] = faces[2, 8];
+            /*Tomando cara Trasera 'B'*/
+            temporal[3] = faces[3, 6];
+            temporal[4] = faces[3, 7];
+            temporal[5] = faces[3, 8];
+            /*Tomando cara Izquierda 'L'*/
+            temporal[6] = faces[4, 6];
+            temporal[7] = faces[4, 7];
+            temporal[8] = faces[4, 8];
+            /*Tomando cara Derecha 'R'*/
+            temporal[9] = faces[5, 6];
+            temporal[10] = faces[5, 7];
+            temporal[11] = faces[5, 8];
 
-            for (int i = 0; i < 3; i++)
-            {
-                faces[2, 6 + i] = faces[5, 6 + i]; // Derecha -> Frontal
-                faces[5, 6 + i] = faces[3, 6 + i]; // Trasera -> Derecha
-                faces[3, 6 + i] = faces[4, 6 + i]; // Izquierda -> Trasera
-                faces[4, 6 + i] = temp[i];     // Frontal -> Izquierda
-            }
+            faces[2,6] = temporal[9];
+            faces[2,7] = temporal[10];
+            faces[2,8] = temporal[11];
+            
+            faces[4,6] = temporal[0];
+            faces[4,7] = temporal[1];
+            faces[4,8] = temporal[2];
+            
+            faces[3,6] = temporal[6];
+            faces[3,7] = temporal[7];
+            faces[3,8] = temporal[8];
+            
+            faces[5,6] = temporal[3];
+            faces[5,7] = temporal[4];
+            faces[5,8] = temporal[5];
         }
         else if(direction == 'R')
         {
             MoveToRight(1);
-            char[] temp = new char[3];
-            for (int i = 0; i < 3; i++) 
-                temp[i] = faces[2, 6 + i]; // Frontal inferior
+            char[] temporal = new char[12];
+            /*Tomando cara Frontal 'F'*/
+            temporal[0] = faces[2, 6];
+            temporal[1] = faces[2, 7];
+            temporal[2] = faces[2, 8];
+            /*Tomando cara Trasera 'B'*/
+            temporal[3] = faces[3, 6];
+            temporal[4] = faces[3, 7];
+            temporal[5] = faces[3, 8];
+            /*Tomando cara Izquierda 'L'*/
+            temporal[6] = faces[4, 6];
+            temporal[7] = faces[4, 7];
+            temporal[8] = faces[4, 8];
+            /*Tomando cara Derecha 'R'*/
+            temporal[9] = faces[5, 6];
+            temporal[10] = faces[5, 7];
+            temporal[11] = faces[5, 8];
 
-            for (int i = 0; i < 3; i++)
-            {
-                faces[2, 6 + i] = faces[5, 6 + i]; // Derecha -> Frontal
-                faces[5, 6 + i] = faces[3, 6 + i]; // Trasera -> Derecha
-                faces[3, 6 + i] = faces[4, 6 + i]; // Izquierda -> Trasera
-                faces[4, 6 + i] = temp[i];     // Frontal -> Izquierda
-            }    
+            faces[2,6] = temporal[6];
+            faces[2,7] = temporal[7];
+            faces[2,8] = temporal[8];
+
+            faces[4,6] = temporal[3];
+            faces[4,7] = temporal[4];
+            faces[4,8] = temporal[5];
+
+            faces[3,6] = temporal[9];
+            faces[3,7] = temporal[10];
+            faces[3,8] = temporal[11];
+
+            faces[5,6] = temporal[0];
+            faces[5,7] = temporal[1];
+            faces[5,8] = temporal[2];
         }
         else
             Console.WriteLine("Opción irreconosible");
     }
-
     /*L de Left para movimientos de la cara izquierda*/
     public void MoveL(char direction)
     {
@@ -443,5 +483,79 @@ public class Cube
         faces[3,3] = temporal[6];
         faces[3,4] = temporal[7];
         faces[3,5] = temporal[8];
+    }
+
+    public void MoveCenterToUpLR()
+    {
+        char[] temporal = new char[12];
+        /*Tomando el centro lateral de la cara 'U'*/
+        temporal[0] = faces[0,3];
+        temporal[1] = faces[0,4];
+        temporal[2] = faces[0,5];
+        /*Tomando el centro de la cara 'L'*/
+        temporal[3] = faces[4,1];
+        temporal[4] = faces[4,4];
+        temporal[5] = faces[4,7];
+        /*Tomando el centro lateral de la cara 'D'*/
+        temporal[6] = faces[1,3];
+        temporal[7] = faces[1,4];
+        temporal[8] = faces[1,5];
+        /*Tomando el centro de la cara 'R'*/
+        temporal[9] = faces[5,7];
+        temporal[10] = faces[5,4];
+        temporal[11] = faces[5,1];
+
+        faces[0,3] = temporal[5];
+        faces[0,4] = temporal[4];
+        faces[0,5] = temporal[3];
+
+        faces[5,1] = temporal[0];
+        faces[5,4] = temporal[1];
+        faces[5,7] = temporal[2];
+
+        faces[1,5] = temporal[11];
+        faces[1,4] = temporal[10];
+        faces[1,3] = temporal[9]; 
+
+        faces[4,1] = temporal[6];
+        faces[4,4] = temporal[7];
+        faces[4,7] = temporal[8];
+    }
+
+    public void MoveCenterToUpRL()
+    {
+        char[] temporal = new char[12];
+        /*Tomando el centro lateral de la cara 'U'*/
+        temporal[0] = faces[0,3];
+        temporal[1] = faces[0,4];
+        temporal[2] = faces[0,5];
+        /*Tomando el centro de la cara 'L'*/
+        temporal[3] = faces[4,1];
+        temporal[4] = faces[4,4];
+        temporal[5] = faces[4,7];
+        /*Tomando el centro lateral de la cara 'D'*/
+        temporal[6] = faces[1,3];
+        temporal[7] = faces[1,4];
+        temporal[8] = faces[1,5];
+        /*Tomando el centro de la cara 'R'*/
+        temporal[9] = faces[5,7];
+        temporal[10] = faces[5,4];
+        temporal[11] = faces[5,1];
+
+        faces[0,3] = temporal[11];
+        faces[0,4] = temporal[10];
+        faces[0,5] = temporal[9];
+
+        faces[5,1] = temporal[0];
+        faces[5,4] = temporal[1];
+        faces[5,7] = temporal[2];
+
+        faces[1,5] = temporal[11];
+        faces[1,4] = temporal[10];
+        faces[1,3] = temporal[9]; 
+
+        faces[4,1] = temporal[6];
+        faces[4,4] = temporal[7];
+        faces[4,7] = temporal[8];
     }
 }

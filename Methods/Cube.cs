@@ -521,7 +521,6 @@ public class Cube
         faces[4,4] = temporal[7];
         faces[4,7] = temporal[8];
     }
-
     public void MoveCenterToUpRL()
     {
         char[] temporal = new char[12];
@@ -546,16 +545,16 @@ public class Cube
         faces[0,4] = temporal[10];
         faces[0,5] = temporal[9];
 
-        faces[5,1] = temporal[0];
-        faces[5,4] = temporal[1];
-        faces[5,7] = temporal[2];
+        faces[5,1] = temporal[6];
+        faces[5,4] = temporal[7];
+        faces[5,7] = temporal[8];
 
-        faces[1,5] = temporal[11];
-        faces[1,4] = temporal[10];
-        faces[1,3] = temporal[9]; 
+        faces[1,5] = temporal[5];
+        faces[1,4] = temporal[4];
+        faces[1,3] = temporal[3]; 
 
-        faces[4,1] = temporal[6];
-        faces[4,4] = temporal[7];
-        faces[4,7] = temporal[8];
+        faces[4,1] = temporal[0];
+        faces[4,4] = temporal[1];
+        faces[4,7] = temporal[2];
     }
 }

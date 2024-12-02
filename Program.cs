@@ -1,22 +1,38 @@
 ﻿using CubeRubikInArrays.Cube;
+using CubeRubikInArrays.Cube4x4;
 using CubeRubikInArrays.Gameplay;
+using CubeRubikInArrays.Gameplay4x4;
 
 internal class Program
 {
     static void Main(string[] args)
     {
-        Gameplay game = new Gameplay(new Cube());
+        Gameplay4x4 gameplay = new Gameplay4x4(new Cube4x4());
 
         while(true)
         {
             Console.WriteLine("\nSelecciona una opción: \n");
-            game.ListMenuOptions();
+            gameplay.ListMenuOptions();
             Console.Write("Tu opción: ");
             string selectMove = Console.ReadLine();
-            game.MovesFactory(selectMove);
+            gameplay.MovesFactory(selectMove);
             Console.WriteLine("\n");
-            game.GetPlainMatrix();
         }
+        // Cube4x4 myCube = new Cube4x4();
+
+        // myCube.Display();
+        // Gameplay game = new Gameplay(new Cube());
+
+        // while(true)
+        // {
+        //     Console.WriteLine("\nSelecciona una opción: \n");
+        //     game.ListMenuOptions();
+        //     Console.Write("Tu opción: ");
+        //     string selectMove = Console.ReadLine();
+        //     game.MovesFactory(selectMove);
+        //     Console.WriteLine("\n");
+        //     game.GetPlainMatrix();
+        // }
     }
 
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CubeRubikInArrays")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+799b1d516fc1c37fef82ff860f723b2227538413")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44de9d17297d160b662700bf8caa76c803b20a91")]
 [assembly: System.Reflection.AssemblyProductAttribute("CubeRubikInArrays")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CubeRubikInArrays")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

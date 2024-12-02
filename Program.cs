@@ -2,12 +2,19 @@
 using CubeRubikInArrays.Cube4x4;
 using CubeRubikInArrays.Gameplay;
 using CubeRubikInArrays.Gameplay4x4;
-
+using CubeRubikInArrays.PaddingHelper;
 internal class Program
 {
     static void Main(string[] args)
     {
-        Gameplay4x4 gameplay = new Gameplay4x4(new Cube4x4());
+        string textPlain = "HolaMundoJaJa";
+        PaddingHelper padding = new PaddingHelper();
+        string textWhitPadding = padding.YourTextWhitPadding(textPlain);
+        // Console.WriteLine(textWhitPadding);
+        // Console.WriteLine(textWhitPadding.Length);
+        Cube4x4 cube = new Cube4x4(textWhitPadding);
+
+        Gameplay4x4 gameplay = new Gameplay4x4(cube);
 
         while(true)
         {
@@ -17,6 +24,7 @@ internal class Program
             string selectMove = Console.ReadLine();
             gameplay.MovesFactory(selectMove);
             Console.WriteLine("\n");
+            Console.WriteLine(cube.GetEncrytpString());
         }
         // Cube4x4 myCube = new Cube4x4();
 

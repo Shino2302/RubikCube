@@ -18,6 +18,31 @@ public class Cube4x4
             {'B','B','B','B','B','B','B','B','B','B','B','B','B','B','B','B'}
         };
     }
+
+    public Cube4x4(string yourTextToEncrypt)
+    {
+        faces = new char[6, 16];
+
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < 16; j++)
+            {
+                faces[i, j] = yourTextToEncrypt[i * 16 + j];
+            }
+        }
+    }
+
+    public string GetEncrytpString()
+    {
+        string data = "";
+        for(int i = 0; i < 6; i++)
+        {
+            for(int j = 0; j < 16; j++)
+                data += faces[i, j];
+        }
+        return data;
+    }
+
     public void Display()
     {
         Console.WriteLine("         {0} {1} {2} {3}", faces[0,0], faces[0,1], faces[0,2], faces[0,3]);

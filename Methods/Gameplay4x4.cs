@@ -124,6 +124,18 @@ public class Gameplay4x4
                 _yourCube.Display();
             break;
 
+            case "CDR":
+                _yourCube.MoveCenterDownToRigth();
+                Console.WriteLine("\n");
+                _yourCube.Display();
+            break;
+
+            case "CDL":
+                _yourCube.MoveCenterDownToLeft();
+                Console.WriteLine("\n");
+                _yourCube.Display();
+            break;
+
             default:
                 Console.WriteLine("Error");
             break;
